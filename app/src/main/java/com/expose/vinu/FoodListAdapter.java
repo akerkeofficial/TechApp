@@ -12,15 +12,13 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-/**
- * Created by Quoc Nguyen on 13-Dec-16.
- */
 
 public class FoodListAdapter extends BaseAdapter {
 
     private Context context;
     private  int layout;
     private ArrayList<Food> foodsList;
+    public static byte[] foodImage;
 
     public FoodListAdapter(Context context, int layout, ArrayList<Food> foodsList) {
         this.context = context;
@@ -72,11 +70,12 @@ public class FoodListAdapter extends BaseAdapter {
         holder.txtName.setText(food.getName());
         holder.txtPrice.setText(food.getPrice());
 
-        byte[] foodImage = food.getImage();
+        foodImage = food.getImage();
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inSampleSize = 2;
         Bitmap bitmap = BitmapFactory.decodeByteArray(foodImage, 0, foodImage.length);
         holder.imageView.setImageBitmap(bitmap);
+
 
         return row;
     }

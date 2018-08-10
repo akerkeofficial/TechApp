@@ -81,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="17dp" />
+        app:layout_constraintGuide_begin="6dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline6"
@@ -100,8 +100,8 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:textSize="15dp"
         android:text="Есть ли у вас какие либо пожелания?"
+        android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
