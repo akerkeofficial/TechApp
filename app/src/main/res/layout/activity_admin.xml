@@ -24,7 +24,7 @@
             android:layout_marginBottom="10dp"
             android:inputType="textEmailAddress"
             android:textColor="@android:color/black"
-            android:hint="введите ваше имя"
+            android:hint="введите ваше ИМЯ"
             android:textColorHint="@android:color/black" />
 
 
