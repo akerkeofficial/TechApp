@@ -51,7 +51,7 @@ public class Language extends AppCompatActivity implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()) {
             case  R.id.russian: {
-                startActivity(new Intent(this, QuestionRus1.class));
+                startActivity(new Intent(this, FoodList.class));
                 break;
             }
 

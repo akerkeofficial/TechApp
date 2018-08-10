@@ -49,6 +49,7 @@ public class FoodList extends AppCompatActivity {
         list = new ArrayList<>();
         adapter = new FoodListAdapter(this, R.layout.food_items, list);
         gridView.setAdapter(adapter);
+        Gallery.sqLiteHelper = new SQLiteHelper(this, "FoodDB.sqlite", null, 1);
 
         // get all data from sqlite
         Cursor cursor = Gallery.sqLiteHelper.getData("SELECT * FROM FOOD");

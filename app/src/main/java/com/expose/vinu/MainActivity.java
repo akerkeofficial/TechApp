@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity
                                     IDENTITIES = user.getIdentity();
                                     USER = user.getName();
                                     Log.d("HAI", IDENTITIES+USER);
-                                    Intent it = new Intent(MainActivity.this,Gallery.class);
+                                    Intent it = new Intent(MainActivity.this,Language.class);
                                     startActivity(it);
                                 }
 
