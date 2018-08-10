@@ -28,6 +28,7 @@ public class RegistrRus extends AppCompatActivity {
 
     public static   String clientname = "";
     public static   String clientdata = "";
+    String answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,7 @@ public class RegistrRus extends AppCompatActivity {
                 String client_name = name.getText().toString();
                 String client_phone = phone.getText().toString();
                 String identity = MainActivity.IDENTITIES;
+                String answer_status = "не оброботан";
 
                 Map<String, String> userMap = new HashMap<>();
 
@@ -61,6 +63,7 @@ public class RegistrRus extends AppCompatActivity {
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(RegistrRus.this, "Client Added Successfull", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(RegistrRus.this, QuestionRus1.class));
+                        finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -73,23 +76,140 @@ public class RegistrRus extends AppCompatActivity {
 
 
 
-                String answer = QuestionRus1.answer;
+
                 Log.d("HAI",QuestionRus1.answer);
 
+                if (QuestionRus1.aa!=null) {
+                    Log.d("HAI", "First");
+                     answer = QuestionRus1.aa;
+                    Map<String, String> answerMap = new HashMap<>();
+
+                    answerMap.put("name", client_name);
+                    answerMap.put("data", client_phone);
+                    answerMap.put("answer", answer);
+                    answerMap.put("identity", identity);
+                    answerMap.put("status", answer_status);
+
+                    firestore.collection("aa").add(answerMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
+                            Toast.makeText(RegistrRus.this, "Added Successfull", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegistrRus.this, Language.class));
+                            finish();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            String error = e.getMessage();
+
+                            Toast.makeText(RegistrRus.this, "Error" + error, Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+                else if (QuestionRus1.bb!=null) {
+                    Log.d("HAI", "First");
+                    answer = QuestionRus1.bb;
+                    Map<String, String> answerMap = new HashMap<>();
+
+                    answerMap.put("name", client_name);
+                    answerMap.put("data", client_phone);
+                    answerMap.put("answer", answer);
+                    answerMap.put("identity", identity);
+                    answerMap.put("status", answer_status);
+
+                    firestore.collection("bb").add(answerMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
+                            Toast.makeText(RegistrRus.this, "Added Successfull", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegistrRus.this, Language.class));
+                            finish();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            String error = e.getMessage();
+
+                            Toast.makeText(RegistrRus.this, "Error" + error, Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
+                else if (QuestionRus1.cc!=null) {
+                    Log.d("HAI", "First");
+                    answer = QuestionRus1.cc;
+                    Map<String, String> answerMap = new HashMap<>();
+
+                    answerMap.put("name", client_name);
+                    answerMap.put("data", client_phone);
+                    answerMap.put("answer", answer);
+                    answerMap.put("identity", identity);
+                    answerMap.put("status", answer_status);
+
+                    firestore.collection("cc").add(answerMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
+                            Toast.makeText(RegistrRus.this, "Added Successfull", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegistrRus.this, Language.class));
+                            finish();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            String error = e.getMessage();
+
+                            Toast.makeText(RegistrRus.this, "Error" + error, Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                }
+                else if (QuestionRus1.dd!=null) {
+                    Log.d("HAI", "First");
+                    answer = QuestionRus1.dd;
+                    Map<String, String> answerMap = new HashMap<>();
+
+                    answerMap.put("name", client_name);
+                    answerMap.put("data", client_phone);
+                    answerMap.put("answer", answer);
+                    answerMap.put("identity", identity);
+                    answerMap.put("status", answer_status);
+
+                    firestore.collection("dd").add(answerMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                        @Override
+                        public void onSuccess(DocumentReference documentReference) {
+                            Toast.makeText(RegistrRus.this, "Added Successfull", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(RegistrRus.this, Language.class));
+                            finish();
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            String error = e.getMessage();
+
+                            Toast.makeText(RegistrRus.this, "Error" + error, Toast.LENGTH_SHORT).show();
+                        }
+                    });
+                }
 
 
-                Map<String, String> answerMap = new HashMap<>();
 
-                answerMap.put("name", client_name);
-                answerMap.put("data", client_phone);
-                answerMap.put("answer", answer);
-                answerMap.put("identity", identity);
+                String consult_name = ConsultRace.consult_name;
+                String consult_status = ConsultRace.consult_status;
+                String consult_rating = ConsultRace.consult_rating;
+                String consult_feedback = ConsultRace.consult_feedback;
 
-                firestore.collection("answers").add(answerMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+
+                Map<String, String> consult = new HashMap<>();
+
+                consult.put("name", consult_name);
+                consult.put("status", consult_status);
+                consult.put("rating", consult_rating);
+                consult.put("feedback", consult_feedback);
+
+                firestore.collection("консультанты отзыв").add(consult).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Toast.makeText(RegistrRus.this, "Added Successfull", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(RegistrRus.this, Language.class));
+                        finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

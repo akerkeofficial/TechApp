@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-    public static  final  String COLLECTION_NAME_KEY = "USERS";
+    public static  final  String COLLECTION_NAME_KEY = "Магазины";
 
     public static   String IDENTITIES = "";
     public static  String USER = "";
@@ -93,6 +93,7 @@ public class MainActivity extends AppCompatActivity
                                     Log.d("HAI", IDENTITIES+USER);
                                     Intent it = new Intent(MainActivity.this,Language.class);
                                     startActivity(it);
+                                    finish();
                                 }
 
                                 else

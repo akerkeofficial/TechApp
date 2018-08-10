@@ -76,8 +76,9 @@ public class Gallery extends AppCompatActivity {
         btnList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Gallery.this, FoodList.class);
+                Intent intent = new Intent(Gallery.this, Language.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
