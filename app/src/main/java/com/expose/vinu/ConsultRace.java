@@ -42,7 +42,6 @@ public class ConsultRace extends AppCompatActivity {
         text_v = (TextView) findViewById(R.id.textView);
         name = (TextView) findViewById(R.id.name);
         status = (TextView) findViewById(R.id.second);
-        photo = (ImageView)findViewById(R.id.photo);
         txvResult = (EditText) findViewById(R.id.txvResult);
 
         name.setText(FoodList.name);

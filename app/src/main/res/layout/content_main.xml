@@ -7,63 +7,91 @@
     android:background="#FFFFFF">
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="500dp"
-        android:layout_height="125dp"
+        android:layout_height="90dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="177dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:scaleType="fitXY"
-        android:src="@drawable/logo_tech" />
+        android:src="@drawable/logo_tech"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/guideline18"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        tools:ignore="MissingConstraints" />
 
 
     <TextView
         android:id="@+id/holliday"
-        android:layout_width="351dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
         android:text="Добро пожаловать"
         android:textColor="#000000"
         android:textSize="30dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        app:layout_constraintVertical_bias="0.828"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="1048dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="252dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/roundwhite"
             android:orientation="horizontal">
 
-            <android.support.constraint.Guideline
-                android:id="@+id/guideline10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal" />
-
             <com.expose.vinu.custom_font.MyEditText
                 android:id="@+id/username"
-                android:layout_width="497dp"
+                android:layout_width="400dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
-                android:background="#FFA500"
+                android:background="#FFFFFF"
                 android:drawablePadding="10dp"
                 android:hint="Username"
                 android:paddingLeft="10dp"
 
                 android:textColor="#000"
                 android:textColorHint="#000"
-                android:textSize="13dp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -78,10 +106,10 @@
 
             <com.expose.vinu.custom_font.MyEditText
                 android:id="@+id/password"
-                android:layout_width="500dp"
-                android:layout_height="50dp"
+                android:layout_width="1023dp"
+                android:layout_height="43dp"
                 android:layout_weight="1"
-                android:background="#FFA500"
+                android:background="#FFFFFF"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
@@ -92,7 +120,7 @@
 
         <com.expose.vinu.custom_font.MyTextView
             android:id="@+id/getstarted"
-            android:layout_width="500dp"
+            android:layout_width="268dp"
             android:layout_height="40dp"
             android:layout_above="@+id/bottom"
 
@@ -122,5 +150,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="188dp" />
+        app:layout_constraintGuide_end="357dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="1dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="1dp" />
+
 </android.support.constraint.ConstraintLayout>

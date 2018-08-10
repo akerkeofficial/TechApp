@@ -6,63 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".RegistrKaz">
 
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="645dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:hint="Атыныз"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189" />
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@color/colorPrimaryDark"
-        android:gravity="center"
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="645dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:focusableInTouchMode="true"
+        android:hint="Телефон нөмірініз немесе поштаныз"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+
+
+    <Button
+        android:id="@+id/add"
+        style="?android:textAppearanceSmall"
+        android:layout_width="311dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFA500"
+        android:text="әрі қарай"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69"
+        tools:layout_editor_absoluteX="500dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="103dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin">
-
-
-        <ImageView
-            android:layout_width="@dimen/logo_w_h"
-            android:layout_height="@dimen/logo_w_h"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="30dp"
-            android:src="@mipmap/ic_launcher"
-            android:contentDescription=""
-            tools:ignore="ContentDescription" />
-
-
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Атыныз"
-            android:inputType="textPersonName"
-            android:maxLines="1"
-            android:textColor="@android:color/white" />
-
-
-
-
-        <EditText
-            android:id="@+id/phone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:focusableInTouchMode="true"
-            android:hint="Телефон нөмірініз немесе поштаныз"
-            android:inputType="number"
-            android:maxLines="1"
-            android:textColor="@android:color/white" />
-
-
-        <Button
-            android:id="@+id/add"
-            style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
-            android:text="әрі қарай"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <!-- Link to Login Screen -->
-
-    </LinearLayout>
+        app:layout_constraintGuide_begin="-14dp" />
 
 
 </android.support.constraint.ConstraintLayout>
