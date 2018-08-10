@@ -2,22 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="/Users/macbookpro/.android/build-cache/559688c55d004d5141fcf734ed9ae634f1e06705/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/mac/Desktop/TechApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="3e1185bdde08224bf1275f6b4f9771df5e738e1b">
-        <dex dex="/Users/macbookpro/Desktop/FirestoreLoginAndReigister/app/build/intermediates/pre-dexed/debug/classes_0f46f987d7a787880c2807e61f23b193bd4f7bd3.jar" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/mac/Desktop/TechApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_00ee9bc3865300bdcee42f0a33fa336b0be60d5b/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="/Users/macbookpro/.android/build-cache/5fef790dae6df3e889f27cd07bb83452797c550a/output/jars/classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/mac/Desktop/TechApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.2"
-        sha1="97fb40924e83775c91374180494801cb022aa008">
-        <dex dex="/Users/macbookpro/Desktop/FirestoreLoginAndReigister/app/build/intermediates/pre-dexed/debug/classes_726db2c07a31a3919ef6c521cc051005ab78c0b4.jar" />
+        sha1="ea47684c9429d5da96c8288fa8bb503a898e056e">
+        <dex dex="/Users/mac/Desktop/TechApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c03042cd036f22118bfaeeb862115b60e9b87bcd/classes.dex" />
     </item>
 
 </items>
