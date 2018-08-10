@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/macbookpro/.android/build-cache/559688c55d004d5141fcf734ed9ae634f1e06705/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3e1185bdde08224bf1275f6b4f9771df5e738e1b">
+        <dex dex="/Users/macbookpro/Desktop/FirestoreLoginAndReigister/app/build/intermediates/pre-dexed/debug/classes_0f46f987d7a787880c2807e61f23b193bd4f7bd3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/macbookpro/.android/build-cache/5fef790dae6df3e889f27cd07bb83452797c550a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="97fb40924e83775c91374180494801cb022aa008">
+        <dex dex="/Users/macbookpro/Desktop/FirestoreLoginAndReigister/app/build/intermediates/pre-dexed/debug/classes_726db2c07a31a3919ef6c521cc051005ab78c0b4.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "786679875917",
+    "firebase_url": "https://newdb-f566d.firebaseio.com",
+    "project_id": "newdb-f566d",
+    "storage_bucket": "newdb-f566d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786679875917:android:b7d6d7c9b2a7967e",
+        "android_client_info": {
+          "package_name": "com.expose.vinu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "786679875917-o4lomfqs5q5p0akuipv8m0cd689gj1ls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7EDzb8pU5pJ_5eVxppVnww-bt2Whx9Qo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
