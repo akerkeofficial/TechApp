@@ -37,7 +37,6 @@
         <activity android:name=".QuestionKaz1" />
         <activity android:name=".RegistrRus" />
         <activity android:name=".RegistrKaz" />
-        <activity android:name=".Camera" ></activity>
         <activity android:name=".ConsultRace" ></activity>
 
     </application>

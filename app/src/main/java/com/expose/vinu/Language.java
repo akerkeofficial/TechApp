@@ -35,7 +35,7 @@ public class Language extends AppCompatActivity implements View.OnClickListener{
         shop_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Language.this,Gallery.class);
+                Intent it = new Intent(Language.this,AdminActivity.class);
                 startActivity(it);
             }
         });

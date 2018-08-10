@@ -24,10 +24,12 @@ public class ConsultRace extends AppCompatActivity {
     private static Button button_sbm;
     TextView text_v,name,status;
     private static RatingBar rating_b;
-    ImageView photo;
-    public static String rating;
+    public static ImageView photo;
     EditText txvResult;
-    public static String consult_answer = "";
+    public static   String consult_name = "";
+    public static   String consult_status = "";
+    public static   String consult_rating = "";
+    public static   String consult_feedback = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,9 +80,16 @@ public class ConsultRace extends AppCompatActivity {
                         Toast.makeText(ConsultRace.this,
                                 String.valueOf(rating_b.getRating()),
                                 Toast.LENGTH_SHORT).show();
-                        rating = String.valueOf(rating_b.getRating());
-                        consult_answer = txvResult.getText().toString();
-                        Log.d("HAI",rating+"   " + consult_answer);
+                        consult_rating = String.valueOf(rating_b.getRating());
+                        consult_feedback = txvResult.getText().toString();
+                        consult_name = name.getText().toString();
+                        consult_status = status.getText().toString();
+                        Log.d("HAI",consult_rating+"   " + consult_feedback + "  " + consult_status + " " +consult_name);
+                        Intent it = new Intent(ConsultRace.this,QuestionRus1.class);
+                        startActivity(it);
+                        finish();
+
+
                     }
                 }
         );
