@@ -104,7 +104,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Есть ли у вас какие либо пожелания?"
+        android:text="Насколько было для вас полезным обслуживание клиентов?"
         android:textSize="15dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,43 +132,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
-            android:text="a" />
+            android:text="Очень полезно" />
 
         <CheckBox
             android:id="@+id/b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
-            android:text="c" />
+            android:text="Частично полезно" />
 
         <CheckBox
             android:id="@+id/c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
-            android:text="c" />
+            android:text="Не слишком полезно" />
 
         <CheckBox
             android:id="@+id/d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onCheckboxClicked"
-            android:text="d" />
+            android:text="Не было полезным" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="281dp"
-        android:layout_height="57dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/btnSpeak"
-        app:layout_constraintHorizontal_bias="0.823"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="296dp" />
 
 
 </android.support.constraint.ConstraintLayout>
