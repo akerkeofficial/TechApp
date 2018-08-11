@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/txvResult"
-        android:layout_width="228dp"
-        android:layout_height="116dp"
+        android:layout_width="410dp"
+        android:layout_height="109dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
@@ -28,24 +28,25 @@
 
     <Button
         android:id="@+id/next"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
 
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:background="@drawable/buttonshape"
-        android:shadowColor="#A8A8A8"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"
-
         android:layout_marginBottom="8dp"
+
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
+
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Дальше"
+
+        android:background="#FFA500"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="әрі қарай"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,8 +75,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="196dp"
-        android:layout_height="56dp"
+        android:layout_width="350dp"
+        android:layout_height="39dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
@@ -83,7 +84,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Сіздің қандай ұсыныстарыныз бар?"
-        android:textSize="15dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

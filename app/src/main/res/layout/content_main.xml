@@ -31,7 +31,7 @@
     <TextView
         android:id="@+id/holliday"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="68dp"
         android:layout_centerVertical="true"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -53,7 +53,7 @@
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
-        android:layout_width="1048dp"
+        android:layout_width="900dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="8dp"
@@ -65,7 +65,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline11"
         app:layout_constraintVertical_bias="0.0">
@@ -81,7 +81,7 @@
 
             <com.expose.vinu.custom_font.MyEditText
                 android:id="@+id/username"
-                android:layout_width="400dp"
+                android:layout_width="600dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
@@ -89,7 +89,7 @@
                 android:hint="Username"
                 android:paddingLeft="10dp"
 
-                android:textColor="#000"
+                android:textColor="#000000"
                 android:textColorHint="#000"
                 android:textSize="16dp" />
         </LinearLayout>
@@ -115,7 +115,7 @@
                 android:paddingLeft="10dp"
                 android:textColor="#000000"
                 android:textColorHint="#000000"
-                android:textSize="13dp" />
+                android:textSize="16dp" />
         </LinearLayout>
 
         <com.expose.vinu.custom_font.MyTextView

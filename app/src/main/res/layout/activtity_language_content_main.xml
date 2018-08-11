@@ -75,6 +75,7 @@
         android:layout_marginTop="8dp"
         android:background="#FFA500"
         android:text="Қазақша"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
