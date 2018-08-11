@@ -28,7 +28,7 @@ public class ScrollingActivity extends AppCompatActivity implements View.OnClick
 
         db = FirebaseFirestore.getInstance();
 
-        textUser.setText(MainActivity.IDENTITIES );
+        textUser.setText(MainActivity.identity );
         Button admin = (Button)findViewById(R.id.admin);
         admin.setOnClickListener(this);
         Button user = (Button)findViewById(R.id.user);

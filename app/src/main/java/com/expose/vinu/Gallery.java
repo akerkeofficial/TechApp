@@ -78,7 +78,6 @@ public class Gallery extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Gallery.this, Language.class);
                 startActivity(intent);
-                finish();
             }
         });
     }

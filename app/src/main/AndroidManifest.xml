@@ -38,6 +38,7 @@
         <activity android:name=".RegistrRus" />
         <activity android:name=".RegistrKaz" />
         <activity android:name=".ConsultRace" ></activity>
+        <activity android:name=".DataUpdate"></activity>
 
     </application>
 

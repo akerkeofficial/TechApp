@@ -33,7 +33,7 @@ import java.util.ArrayList;
  * Created by Quoc Nguyen on 13-Dec-16.
  */
 
-public class FoodList extends AppCompatActivity {
+public class FoodListKaz extends AppCompatActivity {
 
     GridView gridView;
     ArrayList<Food> list;
@@ -56,10 +56,10 @@ public class FoodList extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
                                     int position, long id) {
-                Intent it = new Intent(FoodList.this,ConsultRace.class);
+                Intent it = new Intent(FoodListKaz.this,ConsultRace.class);
                 startActivity(it);
                 Log.d("HAI",name+price);
-                Toast.makeText(FoodList.this, "" + position,
+                Toast.makeText(FoodListKaz.this, "" + position,
                         Toast.LENGTH_SHORT).show();
             }
         });
@@ -81,7 +81,7 @@ public class FoodList extends AppCompatActivity {
 
     }
     public void next(View v) {
-        Intent it = new Intent(FoodList.this,QuestionRus1.class);
+        Intent it = new Intent(FoodListKaz.this,QuestionKaz1.class);
         startActivity(it);
     }
 
