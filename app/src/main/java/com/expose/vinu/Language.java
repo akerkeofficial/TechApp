@@ -56,7 +56,7 @@ public class Language extends AppCompatActivity implements View.OnClickListener{
             }
 
             case R.id.kazakh: {
-                startActivity(new Intent(this, QuestionKaz1.class));
+                startActivity(new Intent(this, FoodList.class));
                 break;
             }
         }

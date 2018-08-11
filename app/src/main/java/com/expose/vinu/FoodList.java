@@ -83,7 +83,6 @@ public class FoodList extends AppCompatActivity {
     public void next(View v) {
         Intent it = new Intent(FoodList.this,QuestionRus1.class);
         startActivity(it);
-        finish();
     }
 
 }

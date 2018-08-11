@@ -88,7 +88,6 @@ public class ConsultRace extends AppCompatActivity {
                         Log.d("HAI",consult_rating+"   " + consult_feedback + "  " + consult_status + " " +consult_name);
                         Intent it = new Intent(ConsultRace.this,QuestionRus1.class);
                         startActivity(it);
-                        finish();
 
 
                     }

@@ -46,7 +46,7 @@ public class RegistrKaz extends AppCompatActivity {
             public void onClick(View view) {
                 String client_name = name.getText().toString();
                 String client_phone = phone.getText().toString();
-                String identity = MainActivity.IDENTITIES;
+                String identity = MainActivity.identity;
 
                 Map<String, String> userMap = new HashMap<>();
 

@@ -24,7 +24,7 @@ public class RegistrRus extends AppCompatActivity {
     private EditText name, phone;     //hit option + enter if you on mac , for windows hit ctrl + enter
     private Button add;
 
-    private FirebaseFirestore firestore;
+    FirebaseFirestore firestore;
 
     public static   String clientname = "";
     public static   String clientdata = "";
@@ -47,7 +47,7 @@ public class RegistrRus extends AppCompatActivity {
             public void onClick(View view) {
                 String client_name = name.getText().toString();
                 String client_phone = phone.getText().toString();
-                String identity = MainActivity.IDENTITIES;
+                String identity = MainActivity.identity;
                 String answer_status = "не оброботан";
 
                 Map<String, String> userMap = new HashMap<>();
@@ -80,7 +80,7 @@ public class RegistrRus extends AppCompatActivity {
                 Log.d("HAI",QuestionRus1.answer);
 
                 if (QuestionRus1.aa!=null) {
-                    Log.d("HAI", "First");
+                    Log.d("HAI", client_name+client_phone+answer_status+answer+identity);
                      answer = QuestionRus1.aa;
                     Map<String, String> answerMap = new HashMap<>();
 
