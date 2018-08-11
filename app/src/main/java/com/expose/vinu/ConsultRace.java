@@ -44,17 +44,16 @@ public class ConsultRace extends AppCompatActivity {
         text_v = (TextView) findViewById(R.id.textView);
         name = (TextView) findViewById(R.id.name);
         status = (TextView) findViewById(R.id.second);
-        photo = (ImageView)findViewById(R.id.photo);
         txvResult = (EditText) findViewById(R.id.txvResult);
 
         name.setText(FoodList.name);
         status.setText(FoodList.price);
 
-        FoodListAdapter.foodImage = FoodList.image;
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inSampleSize = 2;
-        Bitmap bitmap = BitmapFactory.decodeByteArray(FoodListAdapter.foodImage, 0, FoodListAdapter.foodImage.length);
-        photo.setImageBitmap(bitmap);
+//        FoodListAdapter.foodImage = FoodList.image;
+//        BitmapFactory.Options options = new BitmapFactory.Options();
+//        options.inSampleSize = 2;
+//        Bitmap bitmap = BitmapFactory.decodeByteArray(FoodListAdapter.foodImage, 0, FoodListAdapter.foodImage.length);
+//        photo.setImageBitmap(bitmap);
 
 //        InputStream inputStream  = new ByteArrayInputStream(FoodList.image);
 //        Bitmap bitmap  = BitmapFactory.decodeStream(inputStream);

@@ -51,13 +51,12 @@ public class QuestionRus1 extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             txvResult = (EditText) findViewById(R.id.txvResult);
-            txvResult.setText("I Like ");
 
             switch(v.getId()) {
 
                 case R.id.a:
-                    txvResult.setText(txvResult.getText().toString()+" "+ a.getText().toString());
-                    aa = txvResult.getText().toString();
+                //    txvResult.setText(txvResult.getText().toString()+" "+ a.getText().toString());
+                    aa = a.getText().toString();
                     b.setChecked(false);
                     c.setChecked(false);
                     d.setChecked(false);
@@ -66,8 +65,8 @@ public class QuestionRus1 extends AppCompatActivity {
                     break;
 
                 case R.id.b:
-                    txvResult.setText(txvResult.getText().toString()+" "+ b.getText().toString());
-                    bb = txvResult.getText().toString();
+                    //txvResult.setText(txvResult.getText().toString()+" "+ b.getText().toString());
+                    bb = b.getText().toString();
                     a.setChecked(false);
                     c.setChecked(false);
                     d.setChecked(false);
@@ -75,8 +74,8 @@ public class QuestionRus1 extends AppCompatActivity {
                     break;
 
                 case R.id.c:
-                    txvResult.setText(txvResult.getText().toString()+" "+ c.getText().toString());
-                    cc = txvResult.getText().toString();
+                 //   txvResult.setText(txvResult.getText().toString()+" "+ c.getText().toString());
+                    cc = c.getText().toString();
                     b.setChecked(false);
                     a.setChecked(false);
                     d.setChecked(false);
@@ -84,8 +83,8 @@ public class QuestionRus1 extends AppCompatActivity {
                     break;
 
                 case R.id.d:
-                    txvResult.setText(txvResult.getText().toString()+" "+ d.getText().toString());
-                    dd = txvResult.getText().toString();
+                  //  txvResult.setText(txvResult.getText().toString()+" "+ d.getText().toString());
+                    dd = a.getText().toString();
                     b.setChecked(false);
                     c.setChecked(false);
                     a.setChecked(false);
