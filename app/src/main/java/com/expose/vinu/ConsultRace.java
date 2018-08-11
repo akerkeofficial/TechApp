@@ -49,11 +49,11 @@ public class ConsultRace extends AppCompatActivity {
         name.setText(FoodList.name);
         status.setText(FoodList.price);
 
-        FoodListAdapter.foodImage = FoodList.image;
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inSampleSize = 2;
-        Bitmap bitmap = BitmapFactory.decodeByteArray(FoodListAdapter.foodImage, 0, FoodListAdapter.foodImage.length);
-        photo.setImageBitmap(bitmap);
+//        FoodListAdapter.foodImage = FoodList.image;
+//        BitmapFactory.Options options = new BitmapFactory.Options();
+//        options.inSampleSize = 2;
+//        Bitmap bitmap = BitmapFactory.decodeByteArray(FoodListAdapter.foodImage, 0, FoodListAdapter.foodImage.length);
+//        photo.setImageBitmap(bitmap);
 
 //        InputStream inputStream  = new ByteArrayInputStream(FoodList.image);
 //        Bitmap bitmap  = BitmapFactory.decodeStream(inputStream);
